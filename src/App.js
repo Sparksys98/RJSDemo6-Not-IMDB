@@ -15,7 +15,15 @@ function App() {
   return (
     <div className="bg-light">
       <Navbar />
-      <MovieDetail />
+      <Switch>
+        <Route
+          path="/movie/:movieId"
+          render={props => <MovieDetail {...props} />}
+        />
+        <Route path="/mylist" component={MyList} />
+        <Route path="/" render={() => <MovieList movies={movies} />} />
+        <Redirect to="/" />
+      </Switch>
     </div>
   );
 }
