@@ -8,9 +8,9 @@ const MovieCard = props => {
         <img className="card-img-top" src={movie.image} alt={movie.title} />
         <div className="card-body">
           <h5 className="card-title">{movie.name}</h5>
-          <a href={`/movies/${movie.id}`} className="btn btn-outline-info">
+          <Link to={`/movies/${movie.id}`} className="btn btn-outline-info">
             More Details
-          </a>
+          </Link>
         </div>
       </div>
     </div>
