@@ -3,8 +3,9 @@ import React from "react";
 // Data
 import movies from "./data";
 
-const MovieDetail = () => {
-  const movie = movies[0];
+function MovieDetail(props) {
+  const movieId = props.match.params.movieId;
+  const movie = movies.find(movie => movie.id == movieId);
   return (
     <div className="col-6 mx-auto mt-5 pb-5">
       <div className="card ">
@@ -20,6 +21,6 @@ const MovieDetail = () => {
       </div>
     </div>
   );
-};
+}
 
 export default MovieDetail;
