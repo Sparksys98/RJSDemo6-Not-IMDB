@@ -1,6 +1,6 @@
 presentation https://docs.google.com/presentation/d/1oinLmplCEw_zNcolTltn1gSCX6exBLSucOoXjYfxS4Y/
 
-0. Demonstrate the different components (`MyList`, `MovieList`, `MovieDetail`)
+0. Demonstrate the different components (`MyList`, `MovieList`, `MovieDetail`) by manually rendering them
 
 1. Create a Router
 
@@ -78,11 +78,7 @@ import { Route, Switch } from "react-router-dom";
 `MovieCard.js`
 
 ```javascript
-<a
-  href={`/movie/${movie.id}`}
-  className="btn btn-outline-info"
-  style={{ backgroundColor: "white" }}
->
+<a href={`/movie/${movie.id}`} className="btn btn-outline-info">
   More Details
 </a>
 ```
@@ -93,7 +89,7 @@ to
 import {Link} from 'react-router-dom';
 ...
 
-<Link to={`/movies/${movie.id}`} className="btn btn-outline-info" style={{backgroundColor: 'white'}} >More Details</Link>
+<Link to={`/movies/${movie.id}`} className="btn btn-outline-info">More Details</Link>
 ```
 
 7. Add a parametrized route
