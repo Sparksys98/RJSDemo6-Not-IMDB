@@ -12,7 +12,18 @@ body {
   background-color: fuchsia;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+table.table {
+  background-color: white;
+}
+
+thead {
+  background-color: #3d585b;
+}
+
+thead tr {
+  color: white;
+}
+
+nav.navbar.navbar-dark {
+  background-color: #3d585b;
 }
