@@ -5,7 +5,7 @@ import MovieCard from "./MovieCard";
 
 const MovieList = props => {
   const moviesList = props.movies.map(movie => (
-    <MovieCard movie={movie} key={movie.id} />
+    <MovieCard key={movie.id} movie={movie} />
   ));
   return <div className="row">{moviesList}</div>;
 };
