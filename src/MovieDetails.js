@@ -1,4 +1,6 @@
 import React from "react";
+
+// Data
 import movies from "./data";
 
 function MovieDetail() {

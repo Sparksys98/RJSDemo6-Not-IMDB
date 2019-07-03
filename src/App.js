@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./App.css";
 
 // Data
@@ -14,6 +14,7 @@ function App() {
   return (
     <div className="bg-light">
       <Navbar />
+      <MyList />
     </div>
   );
 }
