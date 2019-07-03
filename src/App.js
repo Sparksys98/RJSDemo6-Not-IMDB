@@ -10,14 +10,12 @@ import MoviesList from "./MoviesList";
 import MovieDetails from "./MovieDetails";
 import MyList from "./MyList";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="bg-light">
-        <Navbar />
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div className="bg-light">
+      <Navbar />
+    </div>
+  );
 }
 
 export default App;
