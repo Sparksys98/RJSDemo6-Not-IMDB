@@ -73,7 +73,7 @@ import { Route, Switch } from "react-router-dom";
 </Switch>;
 ```
 
-6. Change the link on the card. Show what it's doing (changing the address).
+6. Change the link on the card. Show what it's doing (changing the address and show the anchor tag reloading ).
 
 `MovieCard.js`
 
@@ -112,11 +112,14 @@ import {Link} from 'react-router-dom';
 `MovieDetail.js`
 
 ```javascript
-const movieId = this.props.match.params.movieId;
-const movie = data[movieId - 1];
+... 
+function MovieDetail(props)
+...
+const movieId = props.match.params.movieId;
+const movie = movies[movieId - 1];
 ```
 
-9. Add a redirect if the page is not found
+9. Add a redirect if the page is not found (mention that if path="/" is not exact it will never go to redirect
 
 `App.js`
 
