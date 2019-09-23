@@ -116,7 +116,7 @@ presentation https://docs.google.com/presentation/d/1oinLmplCEw_zNcolTltn1gSCX6e
    function MovieDetail(props)
    ...
    const movieId = props.match.params.movieId;
-   const movie = movies[movieId - 1];
+   const movie = movies.find(movie=> movie.id==movieId)
    ```
 
 10. Add a redirect if the page is not found (mention that if path="/" is not exact it will never go to redirect
