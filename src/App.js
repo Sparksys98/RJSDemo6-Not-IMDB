@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="bg-light">
       <Navbar />
-      <MyList />
+      <MovieDetails />
     </div>
   );
 }

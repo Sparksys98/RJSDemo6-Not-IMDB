@@ -4,7 +4,7 @@ import React from "react";
 import movies from "./data";
 
 function MovieDetail() {
-  const movie = movies[0];
+  const movie = movies.find(movie => movie.id === 1);
   return (
     <div className="col-6 mx-auto mt-5 pb-5">
       <div className="card ">
