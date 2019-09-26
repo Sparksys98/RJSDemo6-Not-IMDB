@@ -99,15 +99,12 @@ presentation https://docs.google.com/presentation/d/1oinLmplCEw_zNcolTltn1gSCX6e
    ```jsx
    <Switch>
      <Route path="/mylist" component={MyList} />
-     <Route
-       path="/movies/:movieId"
-       render={props => <MovieDetails {...props} />}
-     />
+     <Route path="/movies/:movieId" render={MovieDetails} />
      <Route path="/" render={props => <MoviesList movies={movies} />} />
    </Switch>
    ```
 
-9. Use the param in the detail page
+9. Use the param in the detail page. Explain that we need the `+` in `movie.id === +movieId` because `movieId` coming from the url is a string but `movie.id` is a number.
 
    `MovieDetail.js`
 
@@ -116,10 +113,10 @@ presentation https://docs.google.com/presentation/d/1oinLmplCEw_zNcolTltn1gSCX6e
    function MovieDetail(props)
    ...
    const movieId = props.match.params.movieId;
-   const movie = movies.find(movie=> movie.id==movieId)
+   const movie = movies.find(movie=> movie.id === +movieId)
    ```
 
-10. Add a redirect if the page is not found (mention that if path="/" is not exact it will never go to redirect
+10. Add a redirect if the page is not found (mention that if `path="/"` is not exact it will never go to redirect
 
     `App.js`
 
