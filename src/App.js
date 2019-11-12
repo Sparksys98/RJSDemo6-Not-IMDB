@@ -16,7 +16,7 @@ function App() {
     <div className="bg-light">
       <Navbar />
       <Switch>
-        <Route path="/movies/:movieId" component={MovieDetails} />
+        <Route path="/movies/:movieID" component={MovieDetails} />
         <Route path="/mylist" component={MyList} />
         <Route
           path="/"

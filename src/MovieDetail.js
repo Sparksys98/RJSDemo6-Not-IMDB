@@ -3,7 +3,7 @@ import React from "react";
 // Data
 import movies from "./data";
 
-function MovieDetail(props) {
+const MovieDetail = props => {
   const movieId = props.match.params.movieId;
   const movie = movies.find(movie => movie.id == movieId);
   return (
@@ -21,6 +21,6 @@ function MovieDetail(props) {
       </div>
     </div>
   );
-}
+};
 
 export default MovieDetail;
