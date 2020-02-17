@@ -4,8 +4,8 @@ import React from "react";
 import movies from "./data";
 
 const MovieDetail = props => {
-  const movieId = props.match.params.movieId;
-  const movie = movies.find(movie => movie.id == movieId);
+  const movieID = props.match.params.movieID;
+  const movie = movies.find(movie => movie.id === +movieID);
   return (
     <div className="col-6 mx-auto mt-5 pb-5">
       <div className="card ">
@@ -13,7 +13,7 @@ const MovieDetail = props => {
         <img
           className="card-img-top w-50 mx-auto"
           src={movie.image}
-          alt={movie.title}
+          alt={movie.name}
         />
         <div class="card-body">
           <p class="card-text">{movie.description}</p>

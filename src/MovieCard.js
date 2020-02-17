@@ -6,7 +6,7 @@ const MovieCard = props => {
   return (
     <div className="col-lg-2 col-md-6 col-12">
       <div className="card m-3">
-        <img className="card-img-top" src={movie.image} alt={movie.title} />
+        <img className="card-img-top" src={movie.image} alt={movie.name} />
         <div className="card-body">
           <h5 className="card-title">{movie.name}</h5>
           <Link to={`/movies/${movie.id}`} className="btn btn-outline-info">

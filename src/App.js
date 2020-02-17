@@ -1,6 +1,5 @@
 import React from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
-import "./App.css";
 
 // Data
 import movies from "./data";
@@ -16,11 +15,11 @@ function App() {
     <div className="bg-light">
       <Navbar />
       <Switch>
-        <Route path="/movies/:movieID" component={MovieDetails} />
+        <Route path="/movies/:movieID" component={MovieDetail} />
         <Route path="/mylist" component={MyList} />
         <Route
           path="/"
-          render={props => <MoviesList {...props} movies={movies} />}
+          render={props => <MovieList {...props} movies={movies} />}
         />
         <Redirect to="/" />
       </Switch>
