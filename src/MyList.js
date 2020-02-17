@@ -2,7 +2,7 @@ import React from "react";
 
 import movies from "./data";
 
-function MyList() {
+const MyList = () => {
   return (
     <div className="mx-auto p-2 w-50">
       <h3>My List</h3>
@@ -32,6 +32,6 @@ function MyList() {
       </table>
     </div>
   );
-}
+};
 
 export default MyList;

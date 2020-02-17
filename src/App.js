@@ -6,15 +6,15 @@ import movies from "./data";
 
 // Components
 import Navbar from "./Navbar";
-import MoviesList from "./MoviesList";
-import MovieDetails from "./MovieDetails";
+import MovieList from "./MovieList";
+import MovieDetail from "./MovieDetail";
 import MyList from "./MyList";
 
 function App() {
   return (
     <div className="bg-light">
       <Navbar />
-      <MovieDetails />
+      <MovieDetail />
     </div>
   );
 }

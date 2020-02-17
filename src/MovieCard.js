@@ -1,6 +1,6 @@
 import React from "react";
 
-function MovieCard(props) {
+const MovieCard = props => {
   const movie = props.movie;
   return (
     <div className="col-lg-2 col-md-6 col-12">
@@ -15,6 +15,6 @@ function MovieCard(props) {
       </div>
     </div>
   );
-}
+};
 
 export default MovieCard;
